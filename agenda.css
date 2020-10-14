@@ -3,106 +3,272 @@
 /* =============================== */
 
 
-/* ==============HEADER=========== */
-.header-agenda {
-    background: tomato;
-}
+
 /* ============BODY=============== */
-#body-agenda {
-    margin: 0;
+.body-agenda {
+  margin: 0;
 }
+
+/* ============HEADER============= */
+.header-agenda {
+  background-image: url(images/background-agenda.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#div-one {
+  width: 25%;
+  /* padding-top: 10px; */
+  display: flex;
+  text-align: center;
+  /* background: rgba(255, 192, 203, 0.603); */
+}
+#div-one a {
+  text-decoration: none;
+}
+#div-one a:any-link {
+  color: black;
+}
+#div-one h1 {
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.603);
+  border: 2px solid black;
+  transition: all 250ms;
+  outline-color: rgba(255, 0, 0, 0);
+  outline-style: solid;
+  outline-width: thin;
+  outline-offset: -5px;
+}
+#div-one h1:hover {
+  outline-color: rgb(0, 0, 0);
+  outline-style: solid;
+  outline-width: thick;
+  outline-offset: -5px;
+  background-color: rgb(255, 255, 255);
+  outline-offset: 10px;
+}
+#div-two {
+  display: flex;
+}
+#div-two h1 {
+  text-decoration: none;
+  width: 500px;
+  padding: 20px 0;
+  margin: 40px auto;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.678);
+  text-align: center;
+}
+.a-agenda a {
+  border: 2px solid darkblue;
+}
+
 /* ============TABLE============== */
 table, th, td {
-    border: 2px solid black;
+    border: 1px solid black;
 }
-tr {
-    border: 1px dotted black;
-}
-table {
+table, td {
     border-collapse: collapse;
-    background: rosybrown;
 }
-.day-row {
-    height: 50px;
-    /* ça ne donne pas l'effet voulu */
-    /* position: fixed; */
+.days {
+  width:120px;
 }
-.day-column {
-    width: 150px;
+.hours {
+  border-bottom: none;
 }
-.hour-row {
-    width: 120px;
-    height: 100px;
+th.half-hours {
+  border-top: none;
+  text-align: right;
+  font-size: 10px;
+  font-weight: lighter;
 }
+td.half-hours{
+  border-top: 1px dashed black;
+}
+td {
+  border-bottom: none;
+  padding-left: 0 8px;
+}
+th {
+  height: 50px;
+}
+col:nth-child(odd) {
+background-color: rgba(202, 199, 199, 0.397);
+}
+li {
+  margin-bottom: 5px;
+  list-style-type: square;
+}
+.place {
+  font-style: italic;
+}
+.event-object {
+  font-weight: bold;
+}
+.days {
+  width: 180px;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: darkgray;
+  color: white;
+  font-size: 25px;
+  padding: 0 5px;
+  border: 1px solid black;
+}
+/* .hours {
+  height: 100px;
+  width: 100px;
+  border-bottom: none;
+}
+*/
+/*
+td {
+
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding: 0 5px;
+  font-size: 14px;
+  border-bottom: none;
+  width: 200px;
+}
+*/
+/*
+.half-hours { 
+  background: rgba(210, 105, 30, 0.178);
+  height: 27%; 
+  border-bottom: thin dashed rgba(128, 128, 128, 0.582);
+}
+*/
+.lowest-part {
+  border-bottom: 1px solid black;
+}
+#monday-meeting {
+  background: rgba(9, 178, 245, 0.329);
+  border-radius: 0 30px;
+  
+  outline-color: rgba(255, 0, 0, 0);
+  outline-style: solid;
+  outline-width: thin;
+  outline-offset: 0;
+
+  transition: all 300ms;
+}
+#monday-meeting:hover {
+  background: rgba(159, 169, 173, 0.295);
+  border-radius: 0;
+
+  font-size: 19px;
+  cursor: pointer;
+
+  outline-color: rgba(0, 140, 255, 0.527);
+  outline-style: solid;
+  outline-width: medium;
+  outline-offset: -5px;
+}
+/* ============FOOTER=============== */
+.footer-agenda p {
+  width: 500px;
+  margin: 10px auto;
+  text-align: center;
 
 
-/* ================DIV============= */
-#one {
-    height: 100px;
-    background: rgba(255, 192, 203, 0.603);
 }
-
-
 /* ================================= */
 /* ==========FORMULAIRE============= */
 /* ================================= */
 
-
 .body-form {
-    /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Playfair Display', serif; */
 
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    background: url(images/agenda-stylo.2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background: red; */
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background: url(images/agenda-stylo.2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: red; */
 }
 .header-form {
-    font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 
-    text-align: center;
-    background: rgba(192, 192, 192, 0.596);
+  text-align: center;
+  background: rgba(192, 192, 192, 0.596);
 }
 .form-form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: rgba(221, 160, 221, 0.76);
-    box-shadow: 4px -4px 1px 1px rgba(0, 0, 0, 0.315);
-    width: 50%;
-    margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(224, 224, 224, 0.877);
+  box-shadow: 4px -4px 1px 1px rgba(0, 0, 0, 0.315);
+  width: 50%;
+  margin: 50px auto;
 }
 .form-form label {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-.form-form input, .form-form select, .form-form option {
-    height: 30px;
+.form-form input,
+.form-form select,
+.form-form option {
+  height: 30px;
 }
 /* faudrait que cela fonctionne avec tous les descendants */
 .form-form input {
-    margin: 20px 0;
-    /* padding: 0 15px; */
-    padding-left: 15px;
-    /* clear: both; */
+  margin: 20px 0;
+  /* padding: 0 15px; */
+  padding-left: 15px;
+  /* clear: both; */
 }
 /* ça marche pas A CORRIGER */
 input [type="number"] {
-    background-color: chocolate;
-
+  background-color: chocolate;
 }
 .fieldset-form {
-    margin: 0;
-    margin-top: 20px;
-    border: 2px solid black;
+  margin: 0;
+  margin-top: 20px;
+  border: 2px solid black;
 }
 label {
-    width:200px;
-    display: inline-block;
-    /* text-align: right; */
+  width: 200px;
+  display: inline-block;
+  /* text-align: right; */
 }
 textarea {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+input, textarea, select {
+  outline-color: rgba(42, 195, 255, 0);
+  outline-style: solid;
+  outline-width: medium;
+  outline-offset: -10px;
+  transition: all 300ms;
+}
+input:hover, select:hover, textarea:hover {
+  cursor: pointer;
+  outline-color: rgba(42, 195, 255, 0.966);
+  outline-style: solid;
+  outline-width: medium;
+  outline-offset: 0;
+}
+/* #validate, #description, #categories, #place, #time-length, #starting-time, #date, #titre {
+  outline-color: rgba(42, 195, 255, 0);
+  outline-style: solid;
+  outline-width: medium;
+  outline-offset: -10px;
+  transition: all 300ms;
+}
+#validate:hover, #description:hover, #categories:hover, #place:hover, #time-length:hover, #starting-time:hover, #date, #titre:hover {
+  cursor: pointer;
+  outline-color: rgba(42, 195, 255, 0.966);
+  outline-style: solid;
+  outline-width: medium;
+  outline-offset: 0;
+} */
