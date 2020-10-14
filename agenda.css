@@ -1,0 +1,108 @@
+/* =============================== */
+/* =============AGENDA============ */
+/* =============================== */
+
+
+/* ==============HEADER=========== */
+.header-agenda {
+    background: tomato;
+}
+/* ============BODY=============== */
+#body-agenda {
+    margin: 0;
+}
+/* ============TABLE============== */
+table, th, td {
+    border: 2px solid black;
+}
+tr {
+    border: 1px dotted black;
+}
+table {
+    border-collapse: collapse;
+    background: rosybrown;
+}
+.day-row {
+    height: 50px;
+    /* ça ne donne pas l'effet voulu */
+    /* position: fixed; */
+}
+.day-column {
+    width: 150px;
+}
+.hour-row {
+    width: 120px;
+    height: 100px;
+}
+
+
+/* ================DIV============= */
+#one {
+    height: 100px;
+    background: rgba(255, 192, 203, 0.603);
+}
+
+
+/* ================================= */
+/* ==========FORMULAIRE============= */
+/* ================================= */
+
+
+.body-form {
+    /* font-family: 'Playfair Display', serif; */
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background: url(images/agenda-stylo.2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: red; */
+}
+.header-form {
+    font-family: 'Playfair Display', serif;
+
+    text-align: center;
+    background: rgba(192, 192, 192, 0.596);
+}
+.form-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(221, 160, 221, 0.76);
+    box-shadow: 4px -4px 1px 1px rgba(0, 0, 0, 0.315);
+    width: 50%;
+    margin: 50px auto;
+}
+.form-form label {
+    margin-top: 20px;
+}
+.form-form input, .form-form select, .form-form option {
+    height: 30px;
+}
+/* faudrait que cela fonctionne avec tous les descendants */
+.form-form input {
+    margin: 20px 0;
+    /* padding: 0 15px; */
+    padding-left: 15px;
+    /* clear: both; */
+}
+/* ça marche pas A CORRIGER */
+input [type="number"] {
+    background-color: chocolate;
+
+}
+.fieldset-form {
+    margin: 0;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+label {
+    width:200px;
+    display: inline-block;
+    /* text-align: right; */
+}
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

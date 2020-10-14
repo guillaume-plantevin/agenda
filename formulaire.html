@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="agenda.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire: rajout d'évènements</title>
+    </head>
+    <body class="body-form">
+        <header class="header-form">
+            <h1>Formulaire de rajout d'un évènement</h1>
+        </header>
+        <main>
+            <form action="agenda.html" class="form-form">
+
+                <!-- titre -->
+                <div class="div-one">
+                    <label for="titre">Titre:</label>
+                    <input type="text" id="titre" name="titre" placeholder="Donnez un titre" size="40" autofocus>
+                    <!-- <br> -->
+                </div>
+                
+                <!-- date -->
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <br>
+                </div>
+
+                <!-- heure -->
+                <div>
+                    <label for="starting-time">heure de début:</label>
+                    <input type="time" name="starting-time" id="starting-time">
+                    <br>
+                </div>
+                
+                <!-- durée en minutes (15 x n) -->
+                <label for="time-length">Durée en minutes (par tranches de 30):</label>
+                <input type="number" id="time-length" name="duree" min="30" max="180" step="30" value="60">
+                <br>
+
+                <!-- Lieu du RDV -->
+                <label for="place">Lieu:</label>
+                <input type="text" name="lieu" id="place">
+
+                <!-- Nature select -->
+                <label for="categories">Nature de l'évènement:</label>
+                <select name="categories" id="categories">
+                    <optgroup label="Professionnel">
+                        <option value="reunion">Réunion</option>
+                        <option value="rendez-vous">Rendez-vous</option>
+                    </optgroup>
+                    <optgroup label="Personnel">
+                        <option value="familial">Familial</option>
+                        <option value="amical">Amical</option>
+                        <option value="anniversaire">anniversaire</option>
+                        <option value="amoureux">Amoureux</option>
+                        <option value="sportif">Sportif</option>
+                    </optgroup>
+                </select>
+
+                <!-- choix statut -->
+                <fieldset class="fieldset-form">
+                    <legend>Votre statut durant l'évènement</legend>
+                    <p>Pour que votre téléphone passe en mode silencieux:</p>
+                    
+                    <input type="radio" id="busy" name="busy-or-free" value="occupé(e)">
+                    <label for="busy">Occupé(e)</label>
+                    <input type="radio" id="free" name="busy-or-free" value="libre">
+                    <label for="free">Libre</label>
+                </fieldset>
+    
+
+                <!-- textarea description -->
+                <label for="description">Description/notes concernant l'évènement:</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <br>
+                
+                <!-- input submit -->
+                <label for="validate">Valider le rajout dans votre agenda:</label>
+                <input type="submit" id="validate" value="valider">
+            </form>
+
+        </main>
+
+        <footer>
+        </footer> 
+
+    </body>
+</html>
