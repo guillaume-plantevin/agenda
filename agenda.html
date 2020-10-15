@@ -5,8 +5,9 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="agenda2.css">
+        <link rel="stylesheet" href="agenda.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Agenda</title>
     </head>
 
@@ -24,7 +25,7 @@
                 <table>
                     <!-- pour colorer les nth-child -->
                     <colgroup>
-                        <col>
+                        <col style="width: 100px;">
                         <col>
                         <col>
                         <col>
@@ -35,6 +36,17 @@
                     </colgroup>
 
                     <thead>
+                        <tr>
+                            <th>Octobre</th>
+                            <th class="days-number">12</th>
+                            <th class="days-number">13</th>
+                            <th class="days-number">14</th>
+                            <th class="days-number">15</th>
+                            <th class="days-number">16</th>
+                            <th class="days-number">17</th>
+                            <th class="days-number">18</th>
+
+                        </tr>
                         <tr>
                             <th></th>
                             <th class="days">Lundi</th>
@@ -52,10 +64,21 @@
                         <tr>
                             <th class="hours">7:00</th>
                             <td></td>
+                            <td class="event familly">
+                                <ul>
+                                    <li><span class="title">Footing avec Domi</span></li>
+                                    <li><span class="place">Au "Bois" ;)</span></li>
+                                </ul>
+                            </td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="event familly">
+                                <ul>
+                                    <li><span class="title">Piscine</span></li>
+                                    <li><span class="place">Piscine Mathis</span></li>
+                                </ul>
+
+                            </td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -119,8 +142,8 @@
                             <th class="hours">10:00</th>
                             <td class="event work" id="monday-meeting" rowspan="3">
                                 <ul>
-                                    <li class="title">Meeting</li>
-                                    <li>au <span class="place">bureau</span></li>
+                                    <li> <span class="title">Meeting</span></li>
+                                    <li><span class="place">bureau</span></li>
                                     <li>Note:<br>
                                         garder son sang froid!</li>
                                 </ul>
@@ -194,15 +217,23 @@
                             <td></td>
                             <td class="event familly" rowspan="4">
                                 <ul>
-                                    <li class="title">déjeuner avec Mireille et les enfants</li>
-                                    <li>chez <span class="place">elle</span></li>
+                                    <li><span class="title">déjeuner avec Mireille et les enfants</span></li>
+                                    <li><span class="place"> Chez elle</span></li>
                                     <li>notes:<br>
                                         Apporter le dessert
                                     </li>
                                 </ul>
                             </td>
                             <td></td>
-                            <td></td>
+                            <td  class="event work" rowspan="3">
+                                <ul>
+                                    <li><span class="title">Déjeuner avec J.F. Reddit</span></li>
+                                    <li><span class="place">Taverne du vieux bouc</span></li>
+                                    <li>Notes:<br>
+                                        Lui parler du comportement de Richard (ce con!)
+                                    </li>
+                                </ul>
+                            </td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -214,13 +245,18 @@
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
-                            <td class="half-hours"></td>
                         </tr>
                         <!-- 14:00 > 14:30 -->
                         <tr>
                             <th class="hours">14:00</th>
-                            <td></td>
-                            <td></td>
+                            <td  class="event work" rowspan="5">
+                                <ul>
+                                    <li><span class="titre">Conférence sur le bien-être animal</span></li>
+                                    <li><span class="place">Académie du temps-libre</span></li>
+                                    <li>Notes:<br>
+                                        parler des amibes</li>
+                                </ul>
+                            </td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -234,7 +270,6 @@
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
-                            <td class="half-hours"></td>
                         </tr>
                         <!-- 15:00 > 15:30 -->
                         <tr>
@@ -242,17 +277,27 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="event familly" rowspan="2">
+                                <ul>
+                                    <li><span class="title">Dentiste</span></li>
+                                    <li><span class="place">45, rue de l'Aigle aveugle</span></li>
+                                    <li>Notes:<br>
+                                        Faut que ça brille!
+                                    </li>
+                                </ul>
+                            </td>
                             <td></td>
                             <td></td>
                         </tr>
                         <!-- 15:30 > 16:00 -->
                         <tr>
                             <th class="half-hours">15:30</th>
-                            <td class="half-hours"></td>
-                            <td class="half-hours"></td>
-                            <td class="half-hours"></td>
+                            <td class="half-hours event work" rowspan="3">
+                                <ul>
+                                    <li><span class="title">RDV avec A. De Keersmaeker</span></li>
+                                    <li><span class="place">Bureau</span></li>
+                                </ul>
+                            </td>
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
@@ -266,8 +311,6 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
                         </tr>
                         <!-- 16:30 > 17:00 -->
                         <tr>
@@ -275,15 +318,21 @@
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
-                            <td class="half-hours"></td>
-                            <td class="half-hours"></td>
+                            <td class="half-hours event familly" rowspan="2">
+                                <ul>
+                                    <li class="title">RDV Avocat pour la garde de Louise</li>
+                                    <li class="place"><span></span>Cabinet de maître D.M.</li>
+                                    <li>Notes:<br>
+                                        Demander l'adresse d'un détective
+                                    </li>
+                                </ul>
+                            </td>
                             <td class="half-hours"></td>
                             <td class="half-hours"></td>
                         </tr>
                         <!-- 17:00 > 17:30 -->
                         <tr>
                             <th class="hours">17:00</th>
-                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -356,7 +405,7 @@
                             <td class="event familly" rowspan="6">
                                 <ul>
                                     <li class="title">Repas avec Sarah</li>
-                                    <li class="place">à <span class="place">La Galette Teutonne</span></li>
+                                    <li class="place"><span class="place">La Galette Teutonne</span></li>
                                     <li>Note:<br>
                                         Apporter des fleurs
                                     </li>
@@ -417,12 +466,10 @@
                         </tr>
                     </tbody>
                 </table>
-        
             </div>
         </main>
-        <footer class="footer-agenda">
+        <footer class="footer-both">
             <p>Par Guillaume Plantevin pour la session Coding School 2020 @LaPlateforme_</p>
-
         </footer>
     </body>
 </html>

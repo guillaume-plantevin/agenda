@@ -3,12 +3,10 @@
 /* =============================== */
 
 
-
 /* ============BODY=============== */
 .body-agenda {
   margin: 0;
 }
-
 /* ============HEADER============= */
 .header-agenda {
   background-image: url(images/background-agenda.jpg);
@@ -21,10 +19,9 @@
 }
 #div-one {
   width: 25%;
-  /* padding-top: 10px; */
   display: flex;
   text-align: center;
-  /* background: rgba(255, 192, 203, 0.603); */
+
 }
 #div-one a {
   text-decoration: none;
@@ -122,65 +119,53 @@ li {
   padding: 0 5px;
   border: 1px solid black;
 }
-/* .hours {
-  height: 100px;
-  width: 100px;
-  border-bottom: none;
+.days-number [th]{
+  border: none;
+  background-color: white;
 }
-*/
-/*
 td {
-
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  padding: 0 5px;
-  font-size: 14px;
+  padding: 5px 5px;
   border-bottom: none;
-  width: 200px;
 }
-*/
-/*
-.half-hours { 
-  background: rgba(210, 105, 30, 0.178);
-  height: 27%; 
-  border-bottom: thin dashed rgba(128, 128, 128, 0.582);
-}
-*/
 .lowest-part {
   border-bottom: 1px solid black;
 }
-#monday-meeting {
-  background: rgba(9, 178, 245, 0.329);
-  border-radius: 0 30px;
-  
-  outline-color: rgba(255, 0, 0, 0);
-  outline-style: solid;
-  outline-width: thin;
-  outline-offset: 0;
-
-  transition: all 300ms;
+.title {
+  font-weight: bold;
 }
-#monday-meeting:hover {
-  background: rgba(159, 169, 173, 0.295);
+
+
+
+/* =======VISUAL-INTERACTIONs========= */
+
+.event {
+  border-radius: 0 30px;
+  outline: rgba(255, 0, 0, 0) solid thin;
+  outline-offset: 0;
+  transition: all 250ms;
+}
+.event:hover {
   border-radius: 0;
-
-  font-size: 19px;
-  cursor: pointer;
-
-  outline-color: rgba(0, 140, 255, 0.527);
-  outline-style: solid;
-  outline-width: medium;
-  outline-offset: -5px;
+  font-size: 20px;
+  outline-offset: -7px;
+  outline: rgb(255, 255, 255) solid 3px;
+}
+.familly {
+  background-color: rgba(243, 113, 99, 0.788);
+}
+.work {
+  background-color: rgba(0, 191, 255, 0.692); 
 }
 /* ============FOOTER=============== */
-.footer-agenda p {
-  width: 500px;
-  margin: 10px auto;
+.footer-both p {
+  width: auto;
+  margin: 15px auto;
   text-align: center;
-
-
 }
+#footer-form {
+  color: white;
+}
+
 /* ================================= */
 /* ==========FORMULAIRE============= */
 /* ================================= */
@@ -195,7 +180,6 @@ td {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background: red; */
 }
 .header-form {
   font-family: "Playfair Display", serif;
@@ -215,21 +199,12 @@ td {
 .form-form label {
   margin-top: 20px;
 }
-.form-form input,
-.form-form select,
-.form-form option {
+.form-form input, .form-form select, .form-form option {
   height: 30px;
 }
-/* faudrait que cela fonctionne avec tous les descendants */
 .form-form input {
   margin: 20px 0;
-  /* padding: 0 15px; */
   padding-left: 15px;
-  /* clear: both; */
-}
-/* ça marche pas A CORRIGER */
-input [type="number"] {
-  background-color: chocolate;
 }
 .fieldset-form {
   margin: 0;
@@ -239,7 +214,6 @@ input [type="number"] {
 label {
   width: 200px;
   display: inline-block;
-  /* text-align: right; */
 }
 textarea {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -258,17 +232,3 @@ input:hover, select:hover, textarea:hover {
   outline-width: medium;
   outline-offset: 0;
 }
-/* #validate, #description, #categories, #place, #time-length, #starting-time, #date, #titre {
-  outline-color: rgba(42, 195, 255, 0);
-  outline-style: solid;
-  outline-width: medium;
-  outline-offset: -10px;
-  transition: all 300ms;
-}
-#validate:hover, #description:hover, #categories:hover, #place:hover, #time-length:hover, #starting-time:hover, #date, #titre:hover {
-  cursor: pointer;
-  outline-color: rgba(42, 195, 255, 0.966);
-  outline-style: solid;
-  outline-width: medium;
-  outline-offset: 0;
-} */
