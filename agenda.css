@@ -100,7 +100,7 @@ background-color: rgba(202, 199, 199, 0.397);
 }
 li {
   margin-bottom: 5px;
-  list-style-type: square;
+  list-style-type: circle;
 }
 .place {
   font-style: italic;
